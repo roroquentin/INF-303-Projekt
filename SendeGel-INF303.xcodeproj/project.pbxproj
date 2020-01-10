@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,15 @@
 		72576DB423C8DE8000AB2579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72576DB223C8DE8000AB2579 /* Main.storyboard */; };
 		72576DB623C8DE8300AB2579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72576DB523C8DE8300AB2579 /* Assets.xcassets */; };
 		72576DB923C8DE8300AB2579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72576DB723C8DE8300AB2579 /* LaunchScreen.storyboard */; };
+		72576DC123C8DEBF00AB2579 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72576DC023C8DEBF00AB2579 /* GoogleService-Info.plist */; };
+		72576DC323C8E69200AB2579 /* DuyurularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC223C8E69200AB2579 /* DuyurularViewController.swift */; };
+		72576DC523C8E6A100AB2579 /* DuyuruYapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */; };
+		72576DC723C8E6C200AB2579 /* HesapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC623C8E6C200AB2579 /* HesapViewController.swift */; };
+		88B9A9C006D56CD76BB446D4 /* Pods_SendeGel_INF303.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC37971E1E17F3A1D3C7DF6 /* Pods_SendeGel_INF303.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66781C62E30DA0F4DA3C2EBF /* Pods-SendeGel-INF303.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendeGel-INF303.debug.xcconfig"; path = "Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303.debug.xcconfig"; sourceTree = "<group>"; };
 		72576DA923C8DE8000AB2579 /* SendeGel-INF303.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SendeGel-INF303.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72576DAC23C8DE8000AB2579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72576DAE23C8DE8000AB2579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		72576DB523C8DE8300AB2579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72576DB823C8DE8300AB2579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72576DBA23C8DE8300AB2579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72576DC023C8DEBF00AB2579 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72576DC223C8E69200AB2579 /* DuyurularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularViewController.swift; sourceTree = "<group>"; };
+		72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyuruYapViewController.swift; sourceTree = "<group>"; };
+		72576DC623C8E6C200AB2579 /* HesapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HesapViewController.swift; sourceTree = "<group>"; };
+		CF0A8F4BBEF569E434CE4CA5 /* Pods-SendeGel-INF303.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendeGel-INF303.release.xcconfig"; path = "Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303.release.xcconfig"; sourceTree = "<group>"; };
+		DCC37971E1E17F3A1D3C7DF6 /* Pods_SendeGel_INF303.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendeGel_INF303.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B9A9C006D56CD76BB446D4 /* Pods_SendeGel_INF303.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D5ADF1AF2AA22D35876C6D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66781C62E30DA0F4DA3C2EBF /* Pods-SendeGel-INF303.debug.xcconfig */,
+				CF0A8F4BBEF569E434CE4CA5 /* Pods-SendeGel-INF303.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		72576DA023C8DE8000AB2579 = {
 			isa = PBXGroup;
 			children = (
 				72576DAB23C8DE8000AB2579 /* SendeGel-INF303 */,
 				72576DAA23C8DE8000AB2579 /* Products */,
+				1D5ADF1AF2AA22D35876C6D2 /* Pods */,
+				DD76862DA0EC0799BE2F7550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +82,25 @@
 			children = (
 				72576DAC23C8DE8000AB2579 /* AppDelegate.swift */,
 				72576DAE23C8DE8000AB2579 /* SceneDelegate.swift */,
+				72576DC223C8E69200AB2579 /* DuyurularViewController.swift */,
+				72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */,
+				72576DC623C8E6C200AB2579 /* HesapViewController.swift */,
 				72576DB023C8DE8000AB2579 /* ViewController.swift */,
 				72576DB223C8DE8000AB2579 /* Main.storyboard */,
 				72576DB523C8DE8300AB2579 /* Assets.xcassets */,
 				72576DB723C8DE8300AB2579 /* LaunchScreen.storyboard */,
 				72576DBA23C8DE8300AB2579 /* Info.plist */,
+				72576DC023C8DEBF00AB2579 /* GoogleService-Info.plist */,
 			);
 			path = "SendeGel-INF303";
+			sourceTree = "<group>";
+		};
+		DD76862DA0EC0799BE2F7550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCC37971E1E17F3A1D3C7DF6 /* Pods_SendeGel_INF303.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72576DBD23C8DE8300AB2579 /* Build configuration list for PBXNativeTarget "SendeGel-INF303" */;
 			buildPhases = (
+				E1D01101D7B9C34F7A897157 /* [CP] Check Pods Manifest.lock */,
 				72576DA523C8DE8000AB2579 /* Sources */,
 				72576DA623C8DE8000AB2579 /* Frameworks */,
 				72576DA723C8DE8000AB2579 /* Resources */,
+				4D78926306C0FE7372A80A4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72576DB923C8DE8300AB2579 /* LaunchScreen.storyboard in Resources */,
+				72576DC123C8DEBF00AB2579 /* GoogleService-Info.plist in Resources */,
 				72576DB623C8DE8300AB2579 /* Assets.xcassets in Resources */,
 				72576DB423C8DE8000AB2579 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +172,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D78926306C0FE7372A80A4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1D01101D7B9C34F7A897157 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SendeGel-INF303-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		72576DA523C8DE8000AB2579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72576DC723C8E6C200AB2579 /* HesapViewController.swift in Sources */,
+				72576DC323C8E69200AB2579 /* DuyurularViewController.swift in Sources */,
+				72576DC523C8E6A100AB2579 /* DuyuruYapViewController.swift in Sources */,
 				72576DB123C8DE8000AB2579 /* ViewController.swift in Sources */,
 				72576DAD23C8DE8000AB2579 /* AppDelegate.swift in Sources */,
 				72576DAF23C8DE8000AB2579 /* SceneDelegate.swift in Sources */,
@@ -282,6 +366,7 @@
 		};
 		72576DBE23C8DE8300AB2579 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66781C62E30DA0F4DA3C2EBF /* Pods-SendeGel-INF303.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		72576DBF23C8DE8300AB2579 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0A8F4BBEF569E434CE4CA5 /* Pods-SendeGel-INF303.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
