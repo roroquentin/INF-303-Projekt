@@ -17,6 +17,7 @@
 		72576DC323C8E69200AB2579 /* DuyurularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC223C8E69200AB2579 /* DuyurularViewController.swift */; };
 		72576DC523C8E6A100AB2579 /* DuyuruYapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */; };
 		72576DC723C8E6C200AB2579 /* HesapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72576DC623C8E6C200AB2579 /* HesapViewController.swift */; };
+		72CBEAA423C9DD9C007DCAD1 /* CellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CBEAA323C9DD9C007DCAD1 /* CellTableViewCell.swift */; };
 		88B9A9C006D56CD76BB446D4 /* Pods_SendeGel_INF303.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCC37971E1E17F3A1D3C7DF6 /* Pods_SendeGel_INF303.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		72576DC223C8E69200AB2579 /* DuyurularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyurularViewController.swift; sourceTree = "<group>"; };
 		72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuyuruYapViewController.swift; sourceTree = "<group>"; };
 		72576DC623C8E6C200AB2579 /* HesapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HesapViewController.swift; sourceTree = "<group>"; };
+		72CBEAA323C9DD9C007DCAD1 /* CellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTableViewCell.swift; sourceTree = "<group>"; };
 		CF0A8F4BBEF569E434CE4CA5 /* Pods-SendeGel-INF303.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendeGel-INF303.release.xcconfig"; path = "Target Support Files/Pods-SendeGel-INF303/Pods-SendeGel-INF303.release.xcconfig"; sourceTree = "<group>"; };
 		DCC37971E1E17F3A1D3C7DF6 /* Pods_SendeGel_INF303.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendeGel_INF303.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				72576DAC23C8DE8000AB2579 /* AppDelegate.swift */,
 				72576DAE23C8DE8000AB2579 /* SceneDelegate.swift */,
+				72CBEAA323C9DD9C007DCAD1 /* CellTableViewCell.swift */,
 				72576DC223C8E69200AB2579 /* DuyurularViewController.swift */,
 				72576DC423C8E6A100AB2579 /* DuyuruYapViewController.swift */,
 				72576DC623C8E6C200AB2579 /* HesapViewController.swift */,
@@ -225,6 +228,7 @@
 				72576DB123C8DE8000AB2579 /* ViewController.swift in Sources */,
 				72576DAD23C8DE8000AB2579 /* AppDelegate.swift in Sources */,
 				72576DAF23C8DE8000AB2579 /* SceneDelegate.swift in Sources */,
+				72CBEAA423C9DD9C007DCAD1 /* CellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

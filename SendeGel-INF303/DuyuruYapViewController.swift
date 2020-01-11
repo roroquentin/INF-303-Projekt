@@ -83,7 +83,7 @@ class DuyuruYapViewController: UIViewController, UIImagePickerControllerDelegate
                             
                             var firestoreReference : DocumentReference? = nil
                             
-                            let firestoreDuyuru = ["imageURL" : imageUrl, "Yayınlayan" : Auth.auth().currentUser!.email!, "STKAdı": self.stkAdiText.text, "EtkinlikAdı": self.etkinlikAdiText.text, "EtkinlikAmacı": self.etkinlikAmaciText.text, "EtkinlikTarihi": self.etkinlikTarihText.text, "EtkinlikSorumlusu": self.etkinlikSorumlusuText.text, "İletişim": self.etkinlikSiletisimText.text, "Tarih": FieldValue.serverTimestamp()] as [String : Any]
+                            let firestoreDuyuru = ["imageURL" : imageUrl, "yayinlayan" : Auth.auth().currentUser!.email!, "STKAdi": self.stkAdiText.text, "etkinlikAdi": self.etkinlikAdiText.text, "etkinlikAmaci": self.etkinlikAmaciText.text, "etkinlikTarihi": self.etkinlikTarihText.text, "etkinlikSorumlusu": self.etkinlikSorumlusuText.text, "iletisim": self.etkinlikSiletisimText.text, "tarih": FieldValue.serverTimestamp()] as [String : Any]
                             
                             firestoreReference = firestoreDatabase.collection("DUYURULAR").addDocument(data: firestoreDuyuru, completion: { (error) in
                                 if error != nil{

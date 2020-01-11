@@ -42,7 +42,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="x8Y-Qo-Z58">
-                                <rect key="frame" x="20" y="20" width="374" height="283"/>
+                                <rect key="frame" x="20" y="20" width="374" height="283.00000000000011"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herkes için güzel bir şey yapmak ister misin?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBl-FA-6Rw">
                                 <rect key="frame" x="19" y="584" width="374" height="50"/>
@@ -252,14 +252,82 @@
                     <view key="view" contentMode="scaleToFill" id="iaV-qg-Ly0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vb0-tX-tPK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="414" id="ve3-tp-Wr3" customClass="CellTableViewCell" customModule="SendeGel_INF303" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="414"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ve3-tp-Wr3" id="F7l-7A-2lR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Vx-xa-s1g">
+                                                    <rect key="frame" x="10.666666666666657" y="11" width="393" height="206.00000000000011"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="393" id="FCg-uG-9cS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v18-5y-i94">
+                                                    <rect key="frame" x="20" y="225" width="374" height="26"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="374" id="Xqv-Lc-ZrO"/>
+                                                        <constraint firstAttribute="height" constant="26" id="lDZ-yo-S4a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="sdfsdfsdfsdfjklnvşkdjsnfvpıjdnfvpıne" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s7f-rS-8Gl">
+                                                    <rect key="frame" x="20" y="259" width="374" height="140"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="140" id="IPF-hg-nzA"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="s7f-rS-8Gl" firstAttribute="top" secondItem="v18-5y-i94" secondAttribute="bottom" constant="8" id="69C-2J-Xdq"/>
+                                                <constraint firstItem="7Vx-xa-s1g" firstAttribute="centerX" secondItem="v18-5y-i94" secondAttribute="centerX" id="8BJ-kU-ahr"/>
+                                                <constraint firstItem="7Vx-xa-s1g" firstAttribute="top" secondItem="F7l-7A-2lR" secondAttribute="topMargin" id="ACd-P2-w0B"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="s7f-rS-8Gl" secondAttribute="bottom" constant="4" id="Cha-5z-O2B"/>
+                                                <constraint firstItem="v18-5y-i94" firstAttribute="trailing" secondItem="s7f-rS-8Gl" secondAttribute="trailing" id="YfP-ZJ-ppd"/>
+                                                <constraint firstItem="v18-5y-i94" firstAttribute="leading" secondItem="s7f-rS-8Gl" secondAttribute="leading" id="hR5-ez-KQZ"/>
+                                                <constraint firstItem="v18-5y-i94" firstAttribute="top" secondItem="7Vx-xa-s1g" secondAttribute="bottom" constant="8" id="tYK-lX-IUc"/>
+                                                <constraint firstItem="7Vx-xa-s1g" firstAttribute="centerX" secondItem="F7l-7A-2lR" secondAttribute="centerX" id="wuH-hy-mKi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bilgiTextView" destination="s7f-rS-8Gl" id="Qbh-NZ-wS5"/>
+                                            <outlet property="fotoView" destination="7Vx-xa-s1g" id="zWw-ga-FH0"/>
+                                            <outlet property="userEmail" destination="v18-5y-i94" id="PiT-lB-kuC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vb0-tX-tPK" firstAttribute="centerX" secondItem="iaV-qg-Ly0" secondAttribute="centerX" id="FIZ-7a-7Vj"/>
+                            <constraint firstItem="Vb0-tX-tPK" firstAttribute="top" secondItem="wk4-Yd-ZqV" secondAttribute="top" id="Fg0-sY-0Ie"/>
+                            <constraint firstItem="Vb0-tX-tPK" firstAttribute="bottom" secondItem="wk4-Yd-ZqV" secondAttribute="bottom" id="fHj-zp-UA2"/>
+                            <constraint firstItem="Vb0-tX-tPK" firstAttribute="leading" secondItem="wk4-Yd-ZqV" secondAttribute="leading" id="y4e-fG-QlL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wk4-Yd-ZqV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Duyurular" image="list.dash" catalog="system" id="nyx-Rz-cve"/>
+                    <connections>
+                        <outlet property="tableView" destination="Vb0-tX-tPK" id="hjz-Fe-92C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzN-fa-ZeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970" y="-242"/>
+            <point key="canvasLocation" x="1969.5652173913045" y="-242.11956521739131"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="h4O-Y2-b1w">
