@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SDWebImage
 
 class DuyurularViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
@@ -31,17 +32,33 @@ class DuyurularViewController: UIViewController,UITableViewDelegate,UITableViewD
 
         // Do any additional setup after loading the view.
         getDatafromFirestor()
+        
+        
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+          self.view.endEditing(true)
+      }
     
     func getDatafromFirestor() {
         
         let firestoreDatabase = Firestore.firestore()
         
-        firestoreDatabase.collection("DUYURULAR").addSnapshotListener { (snapshot, error) in
+        firestoreDatabase.collection("DUYURULAR").order(by: "tarih", descending: true).addSnapshotListener { (snapshot, error) in
             if error != nil {
                 print(error?.localizedDescription)
             }else{
                 if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    self.etkinlikAdiArray.removeAll(keepingCapacity: false)
+                    self.etkinlikAmaciArray.removeAll(keepingCapacity: false)
+                    self.etkinlikTarihiArray.removeAll(keepingCapacity: false)
+                    self.etkinlikSorumlusuArray.removeAll(keepingCapacity: false)
+                    self.stkAdiArray.removeAll(keepingCapacity: false)
+                    self.iletisimArray.removeAll(keepingCapacity: false)
+                    self.userImageArray.removeAll(keepingCapacity: false)
+                    self.yayinciArray.removeAll(keepingCapacity: false)
+                    
                     
                     for document in snapshot!.documents{
                         let documentID = document.documentID
@@ -98,15 +115,19 @@ class DuyurularViewController: UIViewController,UITableViewDelegate,UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CellTableViewCell
        
         cell.textLabel?.text = yayinciArray[indexPath.row]
-        cell.fotoView.image = UIImage(named: "logo.jpg")
+        cell.fotoView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
         cell.bilgiTextView.text = """
 
-        Yarışmanın amacı \(etkinlikAmaciArray[indexPath.row]).
-
+         \(stkAdiArray[indexPath.row]) tarafından düzenlenen \(etkinlikAdiArray[indexPath.row]) etkinliği \(etkinlikTarihiArray[indexPath.row]) tarinde yapılacaktır. Etkinlik "\(etkinlikAmaciArray[indexPath.row])" amacı ile gerçekleştirilecektir. Etkinlikte yer almak isteyenler etkinlik sorumlusu \(etkinlikSorumlusuArray[indexPath.row]) ile iletişime geçebilirler.
+            
+        İletişim Numarası : \(iletisimArray[indexPath.row])
+        E-Mail Adresi : \(yayinciArray[indexPath.row])
 """
         
         return cell
     }
+    
+  
     
 
 }

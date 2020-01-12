@@ -11,7 +11,7 @@ import Firebase
 import FirebaseAuth
 
 class HesapViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,9 +28,9 @@ class HesapViewController: UIViewController {
         }
         
         
-        
     }
     
-
-
+  
+   
+    
 }
